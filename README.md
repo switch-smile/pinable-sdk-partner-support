@@ -19,8 +19,7 @@ The repository is organized by platform and version. Each version is a self-cont
 ├── ios/
 │   └── v8.1.1/
 │       ├── sdk/
-│       │   ├── SSBPLite.xcframework
-│       │   └── SSBPLite.framework
+│       │   └── pinablesdk_v8.1.1_ios_20260316.zip        # Extract to get .xcframework
 │       ├── samples/
 │       │   └── MinistopSdkSample/    # Functional iOS Sample Project
 │       └── docs/
@@ -46,7 +45,7 @@ For security reasons, the configuration file (**`app_info.csv`**) is **NOT** inc
 3.  **Documentation**: Detailed instructions are in `android/v8.1.1/docs/Pinable SDK How To Use (Android)_v8.1.1.docx`.
 
 ### 🍎 iOS Integration
-1.  **SDK**: Use the `.xcframework` or `.framework` from `ios/v8.1.1/sdk/`.
+1.  **SDK**: Download and extract `pinablesdk_v8.1.1_ios_20260316.zip` from `ios/v8.1.1/sdk/` to get the `.xcframework`.
 2.  **Sample**: Open the sample project in **Xcode**.
 3.  **Documentation**: Detailed instructions are in `ios/v8.1.1/docs/Pinable SDK How To Use (iOS)_v8.1.1.docx`.
 
