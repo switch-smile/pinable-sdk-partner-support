@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="EnablePopupView" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB" customClass="EnablePopupView" customModule="MinistopSdkSample" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="468" height="117"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2C9-H2-BqH">
+                    <rect key="frame" x="0.0" y="4" width="468" height="113"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="gXp-TW-qNW">
+                            <rect key="frame" x="0.0" y="23.5" width="150.5" height="66"/>
+                            <subviews>
+                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ch1-3N-NxD">
+                                    <rect key="frame" x="51" y="0.0" width="51" height="31"/>
+                                    <connections>
+                                        <action selector="beaconChanged:" destination="iN0-l3-epB" eventType="valueChanged" id="Tqa-wV-RTK"/>
+                                    </connections>
+                                </switch>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" text="Beacon Popup" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="wJF-Nq-pp9">
+                                    <rect key="frame" x="25.5" y="35" width="99.5" height="31"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="ch1-3N-NxD" firstAttribute="height" secondItem="wJF-Nq-pp9" secondAttribute="height" id="5Y1-KN-Pab"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="nSh-Af-RPD">
+                            <rect key="frame" x="158.5" y="23.5" width="151" height="66"/>
+                            <subviews>
+                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZMV-NZ-5IJ">
+                                    <rect key="frame" x="51" y="0.0" width="51" height="31"/>
+                                    <connections>
+                                        <action selector="gpsChanged:" destination="iN0-l3-epB" eventType="valueChanged" id="TIR-nf-UQn"/>
+                                    </connections>
+                                </switch>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" text="GPS Popup" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="41K-cP-vGp">
+                                    <rect key="frame" x="36.5" y="35" width="78" height="31"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="ZMV-NZ-5IJ" firstAttribute="height" secondItem="41K-cP-vGp" secondAttribute="height" id="Gbn-Jd-qfq"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="2ZG-t0-GPR">
+                            <rect key="frame" x="317.5" y="23.5" width="150.5" height="66"/>
+                            <subviews>
+                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5tR-L2-Jc3">
+                                    <rect key="frame" x="50.5" y="0.0" width="51" height="31"/>
+                                    <connections>
+                                        <action selector="ssidChanged:" destination="iN0-l3-epB" eventType="valueChanged" id="zu7-Ty-wsK"/>
+                                    </connections>
+                                </switch>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" text="SSID Popup" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Z8G-FW-5sS">
+                                    <rect key="frame" x="34.5" y="35" width="81.5" height="31"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="5tR-L2-Jc3" firstAttribute="height" secondItem="Z8G-FW-5sS" secondAttribute="height" id="KP9-9x-6zZ"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="2C9-H2-BqH" secondAttribute="trailing" id="9GT-p0-Gyq"/>
+                <constraint firstItem="2C9-H2-BqH" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="4" id="X3y-cb-xzE"/>
+                <constraint firstItem="2C9-H2-BqH" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="eMP-LQ-CuG"/>
+                <constraint firstAttribute="bottom" secondItem="2C9-H2-BqH" secondAttribute="bottom" id="z82-aZ-9pN"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="beaconSwitch" destination="ch1-3N-NxD" id="alq-km-r2V"/>
+                <outlet property="gpsSwitch" destination="ZMV-NZ-5IJ" id="oZq-Oy-GLL"/>
+                <outlet property="ssidSwitch" destination="5tR-L2-Jc3" id="oMV-gD-bS6"/>
+            </connections>
+            <point key="canvasLocation" x="414.49275362318843" y="-258.81696428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

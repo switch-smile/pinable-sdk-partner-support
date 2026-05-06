@@ -1,0 +1,2 @@
+id,appName,appKey,secretKey,host,useBeaconLog,useOfferLog,useNotification,useAdsLog,useLaunchLog,deviceId,csvFacility,csvFloor,csvBeacon,csvNode,csvEdge
+1,oem-app-testing,machikatsu-sstest2,vxRgLyRufm0uuwMQajhBTnQGPBGb6FEJ22ExiOnhkS1n4GMxlhKS218YnxaHGY3U,https://stg.pinable.jp,true,true,false,false,false,,,,,,

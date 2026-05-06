@@ -1,0 +1,11 @@
+platform :ios, '12.0'
+use_frameworks!
+
+def reusepods
+  pod 'FMDB', :modular_headers => true
+  pod "YoutubePlayer-in-WKWebView", "~> 0.3.0"
+end
+
+target 'MinistopSample' do
+  reusepods
+end

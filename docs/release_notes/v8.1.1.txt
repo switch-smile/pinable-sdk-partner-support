@@ -1,0 +1,27 @@
+Created at: Huong
+Updated at: 2026/03/16
+Reader: not for outside (only for develop team)
+Current status: Tested and released to test branch
+
+＊SDK 8.1.1 release note:
+New feature:
+    - (Android/iOS) Compatibility update for 2026 project cycle.
+Bugs fix:
+    - Android: Fix YouTube playback issue (Error 153) by updating library to 12.1.2.
+    - iOS: Fix YouTube playback issue (Error 153) by adding 'origin' parameter to player variables in SSBPOfferVideoPlayerViewController.
+
+＊Others:
+- Update "How to use" for iOS to v8.1.1: 
+    + Updated YoutubePlayer-in-WKWebView version to 0.3.0.
+    + Updated project versioning logic.
+- Update "How to use" for Android to v8.1.1:
+    + Updated androidyoutubeplayer version to 12.1.2.
+- Updated project file (pbxproj) version to 2026.03.
+- Android SDK test branch: release/sdk8.1.1
+- iOS SDK test branch: release/sdk8.1.1
+- Demo app test branch (Android/iOS): test/sdk8.1.1
+
+＊Documents for customer delivery:
+1. pinablesdk_v8.1.1_ios_20260316.zip (iOS) / pinablesdk_v8.1.1_android_20260316.zip (Android)
+2. app_info.csv (customer-specific)
+3. Pinable SDK How To Use (Android/iOS)_v8.1.1

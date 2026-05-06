@@ -1,0 +1,63 @@
+# --- General ---
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Thumbs.db
+.fseventsd
+.Spotlight-V100
+.Trashes
+*.swp
+*~
+*.bak
+*.tmp
+*.log
+
+# --- Android / Gradle ---
+.gradle/
+**/build/
+local.properties
+.externalNativeBuild/
+.cxx/
+cmake/
+captures/
+.idea/caches/
+.idea/libraries/
+.idea/modules.xml
+.idea/workspace.xml
+.idea/navEditor.xml
+.idea/assetWizardSettings.xml
+*.iml
+*.apk
+*.aab
+*.jks
+*.keystore
+
+# --- iOS / Xcode ---
+**/DerivedData/
+**/build/
+**/Pods/
+**/*.xcworkspace
+**/xcuserdata/
+**/*.app
+**/*.ipa
+**/*.dSYM/
+**/*.dSYM.zip
+**/*.moved-aside
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+!default.pbxuser
+!default.mode1v3
+!default.mode2v3
+!default.perspectivev3
+
+# --- Sensitive Data ---
+**/app_info.csv
+
+# --- Whitelist SDK Assets ---
+!**/android/*/sdk/*.aar
+!**/ios/*/sdk/*.xcframework
+!**/ios/*/sdk/*.framework

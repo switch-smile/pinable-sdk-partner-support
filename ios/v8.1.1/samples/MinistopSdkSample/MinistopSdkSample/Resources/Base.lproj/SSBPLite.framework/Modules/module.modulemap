@@ -1,0 +1,6 @@
+framework module SSBPLite {
+  umbrella header "SSBPLite.h"
+
+  export *
+  module * { export * }
+}

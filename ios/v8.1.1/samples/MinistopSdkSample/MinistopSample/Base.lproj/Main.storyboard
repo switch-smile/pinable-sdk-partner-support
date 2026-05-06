@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ddm-gD-l05">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar View Controller-->
+        <scene sceneID="zBN-eo-UaP">
+            <objects>
+                <tabBarController id="Ddm-gD-l05" customClass="TabBarViewController" customModule="MinistopSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lYF-hq-mOy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="whc-2R-Die" kind="relationship" relationship="viewControllers" id="Ity-ev-u9T"/>
+                        <segue destination="xn5-Sn-aIO" kind="relationship" relationship="viewControllers" id="iMa-kM-jts"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aVV-Bq-cTJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="166" y="-62"/>
+        </scene>
+        <!--Coupon-->
+        <scene sceneID="c7b-wo-FJ0">
+            <objects>
+                <viewController id="xn5-Sn-aIO" customClass="CouponViewController" customModule="MinistopSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lvx-MQ-J7r">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="T1R-7G-aeY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Coupon" image="ticket" catalog="system" id="UrL-m0-HIP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JBo-VC-Bb0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1235" y="244"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="9nW-4G-vV3">
+            <objects>
+                <tableViewController id="whc-2R-Die" customClass="HomeTableViewController" customModule="MinistopSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="kvU-qG-7x3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="TfW-1l-1cd">
+                                <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="TfW-1l-1cd" id="g1e-xL-8z8">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="whc-2R-Die" id="iHD-TD-dOA"/>
+                            <outlet property="delegate" destination="whc-2R-Die" id="bzh-ZC-iwu"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Home" image="homekit" catalog="system" id="5xy-5D-td0"/>
+                    <navigationItem key="navigationItem" id="F1Z-Ld-UYZ"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yFe-jg-NPG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1235" y="-430"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="Sm2-VK-zul">
+            <objects>
+                <viewController storyboardIdentifier="WebViewController" modalPresentationStyle="overFullScreen" id="VV4-q2-xEy" customClass="WebViewController" customModule="MinistopSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ho4-4t-W6f">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xBG-rr-4ly">
+                                <rect key="frame" x="41.5" y="134.5" width="331" height="627"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8LD-w3-jra">
+                                <rect key="frame" x="312.5" y="106.5" width="60" height="28"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="CBz-6Y-ZjS"/>
+                                    <constraint firstAttribute="height" constant="28" id="duw-2l-V6D"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="linkColor"/>
+                                <state key="normal" title="Close">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="closeWebView:" destination="VV4-q2-xEy" eventType="touchUpInside" id="hq3-WP-eDn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8Xa-iZ-H5q"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="8LD-w3-jra" firstAttribute="trailing" secondItem="xBG-rr-4ly" secondAttribute="trailing" id="9g8-dx-Fod"/>
+                            <constraint firstItem="xBG-rr-4ly" firstAttribute="centerX" secondItem="ho4-4t-W6f" secondAttribute="centerX" id="FZm-fX-Dgl"/>
+                            <constraint firstItem="xBG-rr-4ly" firstAttribute="centerY" secondItem="ho4-4t-W6f" secondAttribute="centerY" id="NKR-iW-74i"/>
+                            <constraint firstItem="xBG-rr-4ly" firstAttribute="height" secondItem="ho4-4t-W6f" secondAttribute="height" multiplier="0.7" id="aTT-ot-TX9"/>
+                            <constraint firstItem="xBG-rr-4ly" firstAttribute="width" secondItem="ho4-4t-W6f" secondAttribute="width" multiplier="0.8" id="h7A-TC-fh9"/>
+                            <constraint firstItem="xBG-rr-4ly" firstAttribute="top" secondItem="8LD-w3-jra" secondAttribute="bottom" id="o43-93-Uj8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="closeButton" destination="8LD-w3-jra" id="qea-3T-puK"/>
+                        <outlet property="webContainer" destination="xBG-rr-4ly" id="ant-41-v3s"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OFJ-cz-9Er" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3172" y="168"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="homekit" catalog="system" width="128" height="106"/>
+        <image name="ticket" catalog="system" width="128" height="84"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

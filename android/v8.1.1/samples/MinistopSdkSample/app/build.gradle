@@ -1,0 +1,72 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+}
+
+android {
+    compileSdkVersion 33
+
+    defaultConfig {
+        applicationId "com.ministop.sdk.sample"
+        minSdkVersion 23
+        targetSdkVersion 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar", "*.aar"])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'androidx.core:core-ktx:1.9.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.recyclerview:recyclerview:1.3.0'
+    implementation "com.google.android.material:material:1.9.0"
+
+    // Room (Required by SDK)
+    def room_version = "2.5.0"
+    implementation "androidx.room:room-runtime:$room_version"
+    implementation "androidx.room:room-rxjava2:$room_version"
+
+    // SSBP-SDK Dependencies
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'com.android.volley:volley:1.2.1'
+    implementation 'com.google.android.gms:play-services-location:21.0.1'
+    implementation 'com.google.firebase:firebase-core:21.1.1'
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.21'
+    implementation 'androidx.work:work-runtime-ktx:2.8.1'
+
+    implementation 'com.google.code.gson:gson:2.10.1'
+
+    // YouTube player (optional video support)
+    implementation 'com.pierfrancescosoffritti.androidyoutubeplayer:core:12.1.2'
+
+    // Required: SDK uses BrightcoveExoPlayerVideoView to play video-type offers.
+    // The AAR does not bundle transitive deps, so this must be declared explicitly.
+    implementation 'com.brightcove.player:exoplayer2:7.1.3'
+}
+

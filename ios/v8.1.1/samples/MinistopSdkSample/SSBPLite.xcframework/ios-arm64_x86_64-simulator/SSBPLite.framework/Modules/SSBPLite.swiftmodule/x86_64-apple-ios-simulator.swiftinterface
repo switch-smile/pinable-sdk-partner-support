@@ -1,0 +1,19 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.1 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
+// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 6 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -module-name SSBPLite
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1
+import Foundation
+import NetworkExtension
+@_exported import SSBPLite
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@_inheritsConvenienceInitializers @objc final public class Wi2Manager : ObjectiveC.NSObject, @unchecked Swift.Sendable {
+  @available(iOS 11.0, *)
+  @objc final public func addEap(loCd: Swift.String, loPassword: Swift.String, ssidName: Swift.String)
+  @available(iOS 11.0, *)
+  @objc final public func removeEap()
+  @objc override dynamic public init()
+  @objc deinit
+}

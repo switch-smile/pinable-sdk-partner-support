@@ -1,0 +1,24 @@
+PODS:
+  - FMDB (2.7.12):
+    - FMDB/standard (= 2.7.12)
+  - FMDB/Core (2.7.12)
+  - FMDB/standard (2.7.12):
+    - FMDB/Core
+  - YoutubePlayer-in-WKWebView (0.3.11)
+
+DEPENDENCIES:
+  - FMDB
+  - YoutubePlayer-in-WKWebView (~> 0.3.0)
+
+SPEC REPOS:
+  trunk:
+    - FMDB
+    - YoutubePlayer-in-WKWebView
+
+SPEC CHECKSUMS:
+  FMDB: 728731dd336af3936ce00f91d9d8495f5718a0e6
+  YoutubePlayer-in-WKWebView: 2c3aa1d5ad8dded9f95ef12033af5dd8e55864b7
+
+PODFILE CHECKSUM: 2a4b9c5c28d186312ea25c88e738ed40afd76780
+
+COCOAPODS: 1.16.2
